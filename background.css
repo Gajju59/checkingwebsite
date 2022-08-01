@@ -1,0 +1,219 @@
+@charset "utf-8";
+.container img {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    border-radius: 100%;
+    margin-left: 0%;
+
+}
+
+.righta img {
+    position: relative;
+    width: 5%;
+    margin-left: 81%;
+}
+
+ul {
+    background-color: #ffffff;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 12.5% 75% 12.5%;
+    grid-template-rows: 40% 20% 20% 20%;
+    gap: 15% 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". text ." ". pic-1 ." ". pic-2 ." ". pic-3 .";
+    height: 100%
+}
+
+.text {
+    align-self: stretch;
+    grid-area: text;
+    font-size: 170%;
+    text-align: left;
+}
+
+.pic-1 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+    grid-area: pic-1;
+    font-size: 100%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.pic-1 span {
+    font-size: 150%;
+    width: 300%;
+    left: 105%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+.pic-2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+    grid-area: pic-2;
+    font-size: 100%;
+    text-align: right;
+}
+
+.pic-2 span {
+    font-size: 150%;
+    width: 100%;
+    left: 5%;
+    position: relative;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.pic-3 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    gap: 0px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+    grid-area: pic-3;
+    font-size: 100%;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 3%;
+}
+
+.pic-3 span {
+    font-size: 150%;
+    width: 300%;
+    left: 105%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices *//**For medium devices*/ /*For Large devices*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 710px){
+
+  .text{
+    font-size: small;
+  }
+  .pic-1{
+    font-size: small;
+    margin-top: -150px;
+  }
+  .pic-2{
+    font-size: small;
+  }
+  .pic-3{
+    font-size: small;
+    margin-top: 150px;
+  }
+   
+ }
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px){
+    .text{
+        font-size: 12px;
+      }
+      .pic-1{
+        font-size: 12px;
+        margin-top: -150px;
+      }
+      .pic-2{
+        font-size: 12px;
+        margin-top: 50px;
+      }
+      .pic-3{
+        font-size: 12px;
+        margin-top: 320px;
+      }
+       
+ }
+ 
+
+ /*custom scroll bar*/
+
+ /* width */
+::-webkit-scrollbar {
+  width: 20px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF5B00; 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5B00;
+  
+}
+
+
+/*animation*/
+
+.icon1{
+  animation: animate__rotateOut 0.85s ease infinite;
+}
+
+
+/*animation*/
+
+@keyframes animate__rotateOut{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+/*dark mode button*/
+
+.dark-mode {
+
+  color: #2b3579
+}
+
+
+#button{
+  height: 30px;
+  width: 30px;
+  background-color: #2b3579;
+  border-radius: 100%;
+  border:  2px snow solid;
+}

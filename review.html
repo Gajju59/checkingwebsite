@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./universal_css/reset.css">
+    <link rel="stylesheet" href="./universal_css/navbar.css">
+    <link rel="stylesheet" href="review.css">
+    <script src="./js/nav.js"></script>
+    <title>Zachary Leong</title>
+</head>
+
+<body>
+    <a href="career.html" class="lefta"><img src="./assets/left.svg" alt=""><button hidden></button></a>
+    <a href="index.html" class="righta"><img src="./assets/right.svg" alt=""><button hidden></button></a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Intro</a>
+        <a href="Background.html">Background</a>
+        <a href="About.html">About DAAA</a>
+        <a href="Career.html">Career Option</a>
+        <a href="Review.html">Review</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#x2630;</span>
+    <div>
+
+        <form action="https://example.com/" method="post" autocomplete="on">
+
+            <div class="container">
+                <div class="left">
+
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="user_name">
+
+                    <br>
+
+                    <label for="mail">E-mail:</label><br>
+                    <input type="email" id="mail" name="user_email">
+
+
+                    <br>
+
+                    <label for="phone">Phone number:</label><br>
+                    <input type="number" id="phone" name="user_number">
+
+
+
+                    <div class="slidecontainer">
+                        <label for="age">Age:</label><br>
+                        <input type="range" value="69" min="0" max="100" oninput="this.nextElementSibling.value = this.value" id="age">
+                        <output>69</output>
+                    </div>
+
+
+
+
+                    <div class="spacing">
+                        <label for="school">Select a School:</label><br>
+                        <select name="school" id="school">
+                            <option value="b">Pick a school</option>
+                            <option value="sp">Singapore Polytechnic</option>
+                            <option value="tp">Temasek Polytechnic</option>
+                            <option value="np">Ngee Ann Polytechnic</option>
+                            <option value="nyp">Nan Yang Polytechnic</option>
+                            <option value="rp">Republic Polytechnic</option>
+                         <option value="ot">Others</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <input type="checkbox" id="q1" name="q1" value="Bike">
+                    <label for="q1"> Have you learnt more about Zachary</label><br><br>
+                    <input type="checkbox" id="q2" name="q2" value="Car">
+                    <label for="q2"> Have you learnt more about SOC</label><br><br>
+                    <input type="checkbox" id="q3" name="q3" value="Boat">
+                    <label for="q3"> Have you learnt about different Career Options</label><br><br>
+
+
+                    <div class="spacing">
+                        <label class="rating-label"><strong>Rate the website</strong>
+                        <input
+                          class="rating"
+                          max="5"
+                          oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+                          step="0.1"
+                          style="--fill: #C8102E; --symbol:var(--heart); --value:0"
+                          type="range"
+                          value="5">
+                      </label><br><br>
+                    </div>
+
+
+                    <label for="msg">Any other comments:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+
+                    <input class="btn" type="submit" class="sub" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="bottomleft">&#x00A9;zachary2022</div>
+
+</body>
+
+</html>

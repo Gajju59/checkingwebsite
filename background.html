@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./universal_css/reset.css">
+    <link rel="stylesheet" href="./universal_css/navbar.css">
+    <link rel="stylesheet" href="background.css">
+    <script src="./js/nav.js"></script>
+    <title>Zachary Leong</title>
+
+
+</head>
+
+<body>
+
+    <a href="index.html" class="lefta"><img src="./assets/left.svg" alt=""><button hidden></button></a>
+    <a href="about.html" class="righta"><img src="./assets/right.svg" alt=""><button hidden></button></a>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Intro</a>
+        <a href="Background.html">Background</a>
+        <a href="About.html">About DAAA</a>
+        <a href="Career.html">Career Option</a>
+        <a href="Review.html">Review</a>
+    </div>
+    <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#x2630;</span>
+
+          
+<button id="button" onclick="myFunction()"></button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+
+    <div class="container">
+        <div class="text">
+            <h1> A Quick Background of me</h1>
+            <ul>
+                <li>2012-2019 : Student of Anglo Chinese School (Primary)</li>
+                <li>2019-2021 : Student of Anglo Chinese School (Barker Road)</li>
+                <li>2022-20XX : Student of Singapore Polytechnic</li>
+            </ul>
+        </div>
+        <div class="pic-1">
+            <img class="icon1" src="./assets/rugby.png" alt="rugby">
+            <h1>Vice Captain of ACS(P) Rugby Team</h1>
+            <span>Appointed as the team's vice captain to form strategies for the team as well as to keep the team's moral high. First leadership position I held and I learnt how to descalate conflicts and understand people better.</span>
+        </div>
+        <br>
+        <div class="pic-2">
+            <h1>Admin & Publication NCO for 12BR Boys' Brigade</h1>
+            <img class="icon1" src="./assets/bb.png" alt="boy brigade">
+            <span>Appointed as the Admin & Publication NCO to ensure that activties run smoothly by accounting for logistics and head-count. As well as social media publication of what our BB company did where I learnt many media arts design tips</span>
+        </div>
+        <br>
+        <div class="pic-3">
+            <img class="icon1" src="./assets/mindstorm.webp" alt="lego">
+            <h1>Vice Chairman of ACSBR Robotics Team</h1>
+            <span>Appointed as the Vice Chairman. In addition to working with other EXCO members to get task such as VIA planing and attendance taking completed, I had to organise weekly traning session and plan for upcoming competition.</span>
+        </div>
+    </div>
+
+
+    <div class="bottomleft">&#x00A9;zachary2022</div>
+</body>
+
+</html>

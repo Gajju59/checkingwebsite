@@ -1,0 +1,170 @@
+@charset "utf-8";
+html {
+    scroll-snap-type: y mandatory;
+    font-size: 200%;
+}
+
+body {
+    margin: 0%;
+}
+
+section {
+    block-size: 100vh;
+    /* scroll-snap-align: center; */
+    scroll-snap-stop: always;
+    width: 120%
+}
+
+ul {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 10%;
+}
+
+ul ::marker {
+    content: "▶ ";
+}
+
+li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+h1 {
+    font-size: 300%;
+    margin: 0%;
+    padding-left: 3%;
+    padding-top: 5%;
+    margin-left: 50px;
+    
+}
+
+p {
+    font-size: 100%;
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 20px;
+    margin-left: 5%;
+    /* margin-top: 80px; */
+}
+
+#midbar{
+    margin-top: 190px;
+}
+
+#mid{
+    margin-top: 80px;
+}
+
+.pay {
+    font-size: 100%;
+    background-color: #ffffff00;
+    padding: 0%;
+    border-radius: 0px;
+    margin-left: 10%;
+    margin-top: -50px;
+}
+
+.down {
+    text-align: center;
+    /* padding-top: 10%; */
+    font-size: 500%;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.header h2 {
+    text-align: center;
+}
+/* 
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+} */
+
+/* .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+} */
+
+.content {
+    padding: 0px;
+    margin: 0px;
+    width: 80%;
+}
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices *//**For medium devices*/ /*For Large devices*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 710px){
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}
+
+ }
+ 
+ @media only screen and (min-device-width: 720px) and (max-device-width: 1280px){
+    
+   
+       
+ }
+ 
+ 
+ @media only screen and (min-device-width: 280px) and (max-device-width: 653px){
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    
+ }
+ 
+ 
+ /*custom scroll bar*/
+
+ /* width */
+::-webkit-scrollbar {
+    width: 20px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF5B00; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF5B00;
+    
+  }
+
+  

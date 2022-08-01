@@ -1,0 +1,216 @@
+@charset "utf-8";
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.8fr 16fr 2fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0%;
+    height: 100%;
+    grid-auto-flow: row;
+    grid-template-areas: "top" "grad" "bottom" "footer";
+}
+
+.hamburger {
+    margin-right: auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.invisible {
+    margin-left: auto;
+    font-size: 30px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 8%;
+    grid-auto-flow: row;
+    grid-template-areas: "left right";
+    grid-area: bottom;
+}
+
+.left {
+    grid-area: left;
+    text-align: right;
+    align-self: center;
+}
+
+.right {
+    grid-area: right;
+    text-align: left;
+    align-self: center;
+}
+
+.top {
+    grid-area: top;
+    background-color: aliceblue;
+}
+
+div.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pic {
+    vertical-align: 50%;
+    width: 7%;
+}
+
+img {
+    height: auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.line1 {
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line2 {
+    font-size: 500%;
+    font-family: 'Milkshake';
+    color: #333333;
+    padding-top: 7.5%;
+}
+
+.line3 {
+    font-size: 280%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-top: 7.5%;
+}
+
+.grad {
+    background-image: linear-gradient(aliceblue, coral);
+}
+
+.size {
+    width: 2.5%;
+    height: auto;
+    vertical-align: center;
+    border-radius: 10px;
+    padding-top: 0.5%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+.size:hover {
+    animation: float 1s ease-in-out infinite;
+}
+
+footer {
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #333333a6;
+    position: fixed;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices *//**For medium devices*/ /*For Large devices*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 710px){
+   .left{
+    width: 200px;
+    
+   }
+
+   .rightimg{
+    height: 300px;
+    width: 200px;
+    margin-left: -175px;
+    margin-top: 180px;
+   }
+
+   .line1{
+    width: 100%;
+    font-size: 20px;
+    margin-top: -220px;
+    /* margin-left: -50px; */
+
+   }
+   .line2{
+    width: 100%;
+    font-size: 30px;
+    margin-left: 50px;
+   }
+
+   .line3{
+    width: 100%;
+    font-size: 20px;
+    margin-left: 50px;
+   }
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px){
+   
+    
+       .rightimg{
+       height: 560px;
+       width: 380px;
+       }
+    
+      
+}
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px){
+    .left{
+        width: 200px;
+        
+       }
+    
+       .rightimg{
+        height: 300px;
+        /* width: 200px; */
+        height: 300px;
+    width: 200px;
+    margin-left: -175px;
+    margin-top: 180px;
+      
+       }
+    
+       .line1{
+        width: 100%;
+        font-size: 20px;
+        margin-top: -220px;
+    
+       }
+       .line2{
+        width: 100%;
+        font-size: 30px;
+        margin-left: 50px;
+       }
+    
+       .line3{
+        width: 100%;
+        font-size: 20px;
+        margin-left: 50px;
+       }
+}
+
